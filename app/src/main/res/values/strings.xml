@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">NutriSys</string>
+
+    <string name="name">Nutri Sys</string>
+    <string name="logo">Logo</string>
+    <string name="pass">Contraseña</string>
+    <string name="pass2">Confirma Contraseña</string>
+    <string name="email">Correo electronico</string>
+    <string name="google">google</string>
+    <string name="facebook">facebook</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="registra">Registrarse</string>
+
+    <string name="welcome">Bienvenido</string>
+    <string name="nameP">Nombre</string>
+    <string name="registraCon">Registrarse con:</string>
+    <string name="iniciarCon">Iniciar con:</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="Inicio">Inicio</string>
+    <string name="foto">Foto</string>
+    <string name="editar">Editar</string>
+    <string name="celu">Telefono</string>
+    <string name="genero">Genero</string>
+    <string name="Edad">Edad</string>
+    <string name="Estatura">Estatura</string>
+    <string name="Peso">Peso</string>
+
+    <string name="ejercicio">Ejercicios</string>
+    <string name="fuerza">Ejercicios de Pesas</string>
+    <string name="cardio">Ejercicios de Cardio</string>
+    <string name="flexion">Ejercicios de Flexibilidad</string>
+    <string name="infoGene">Información general</string>
+
+    <string name="perfil">Perfil</string>
+    <string name="fecha">Fecha nacimiento</string>
+
+
+    <string name="guardar">Guardar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="ver">Ver más</string>
+    <string name="title_activity_ejemplo">ejemplo</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="infoP">Los ejercicios de fuerza, también denominados de resistencia fortalecen los músculos y los huesos y aceleran el metabolismo. Los ejercicios de fortalecimiento también aumentan el tamaño de los músculos. Los músculos usan calorías como fuente de energía incluso cuando el cuerpo está en reposo. </string>
+    <string name="infoF">Los ejercicios de flexibilidad, también denominados ejercicios para la amplitud de movimiento o simplemente, de estiramiento, mantienen la elasticidad de los músculos y la libertad de movimiento de las articulaciones. Los ejercicios de flexibilidad deben dar una sensación de "tensión con comodidad". Debes sentir solo el estiramiento, nunca dolor.  </string>
+    <string name="infoC">El ejercicio cardiovascular también se denomina ejercicio aeróbico. El ejercicio aeróbico emplea los músculos grandes con movimientos rítmicos y repetitivos; y puede realizarse durante largo tiempo. </string>
+    <string name="infoG">Conocer la clasificación básica de los ejercicios es ideal a la hora de querer mantener un cuerpo que goce de buena salud. Existen tres tipos de ejercicios básicos que son: </string>
+
+    <string name="infoG3">Ejercicios aeróbicos o cardiovasculares.</string>
+    <string name="infoG4">Ejercicios de flexibilidad.</string>
+    <string name="infoG5">Ejercicios de fuerza y resistencia.</string>
+
+    <string name="ClasiPesas">Clasificación para ejercicios de peso</string>
+    <string name="Pectoral">Pectoral</string>
+    <string name="Dorsal">Dorsal</string>
+    <string name="Cuádriceps">Cuádriceps</string>
+    <string name="Bíceps">Bíceps</string>
+    <string name="Tríceps">Tríceps</string>
+    <string name="Hombros">Hombros</string>
+    <string name="Isquiosofemorales">Isquios o femorales</string>
+    <string name="Glúteos">Glúteos</string>
+    <string name="Abdominales">Abdominales</string>
+    <string name="Antebrazos">Antebrazo</string>
+    <string name="Cuello">Cuello</string>
+    <string name="Gemelos">Gemelos</string>
+
+</resources>
