@@ -101,6 +101,24 @@
 
                 </com.google.android.material.textfield.TextInputLayout>
 
+                <TextView
+                    android:id="@+id/tTusuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_margin="5dp"
+                    android:text="@string/StipoU"
+                    android:textColor="#0E0E0E"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spnTUsuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_rounded3"/>
+
                 <Button
                     android:id="@+id/btnlogin"
                     android:layout_width="match_parent"

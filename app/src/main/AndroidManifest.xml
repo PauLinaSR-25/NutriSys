@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".InfoGeneral"></activity>
+        <activity android:name=".main_opcionDepo"></activity>
+        <activity android:name=".main_opcionPsico" />
+        <activity android:name=".main_opcionNutri" />
+        <activity android:name=".checkinEspecialistas" />
+        <activity android:name=".InfoGeneral" />
         <activity android:name=".ListEpesas" />
         <activity android:name=".Estiramiento" />
         <activity android:name=".Cardio" />
