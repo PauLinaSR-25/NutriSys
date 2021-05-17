@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EDprofile"
+    tools:context=".EDprofileEsp"
     android:background="@color/white"
     android:layout_margin="5dp">
 
@@ -35,7 +35,7 @@
                     android:textSize="30sp" />
 
                 <ImageView
-                    android:id="@+id/iVFotoNP"
+                    android:id="@+id/iVFotoEDEsp"
                     android:layout_width="123dp"
                     android:layout_height="92dp"
                     android:layout_gravity="center"
@@ -57,7 +57,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETNombre"
+                        android:id="@+id/tEDNombreEsp"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/button_rounded3"
@@ -73,7 +73,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETPApellido"
+                        android:id="@+id/tApellidoPEsp"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/button_rounded3"
@@ -90,7 +90,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETSApellido"
+                        android:id="@+id/tApellidoSEsp"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/button_rounded3"
@@ -111,7 +111,7 @@
                         android:layout_margin="7dp">
 
                         <com.google.android.material.textfield.TextInputEditText
-                            android:id="@+id/tIETFechaNP"
+                            android:id="@+id/tFechaEDEsp"
                             android:layout_width="match_parent"
                             android:layout_height="40dp"
                             android:background="@drawable/button_rounded3"
@@ -121,7 +121,7 @@
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <ImageButton
-                        android:id="@+id/btnCalendarioNP"
+                        android:id="@+id/btnCalendarioEDEsp"
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="1dp"
@@ -136,7 +136,7 @@
                 </LinearLayout>
 
                 <Spinner
-                    android:id="@+id/spnGeneroC"
+                    android:id="@+id/spnGeneroEDEsp"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_weight="1"
@@ -146,11 +146,27 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="@string/Titulo"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tProfesionEDEsp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:hint="@string/celu"
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETCel"
+                        android:id="@+id/tCelEDEsp"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/button_rounded3"
@@ -167,7 +183,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETCalle"
+                        android:id="@+id/tCalleEDEsp"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/button_rounded3"
@@ -183,7 +199,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETNumeroC"
+                        android:id="@+id/tNumeroCEDEsp"
                         android:layout_width="match_parent"
                         android:inputType="numberDecimal"
                         android:layout_height="40dp"
@@ -199,7 +215,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETColonia"
+                        android:id="@+id/tColoniaEDEsp"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/button_rounded3"
@@ -215,7 +231,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETMunicipio"
+                        android:id="@+id/tMunicipioEDEsp"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/button_rounded3"
@@ -232,7 +248,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETEntidad"
+                        android:id="@+id/tEntidadEDEsp"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/button_rounded3"
@@ -249,7 +265,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETEmail"
+                        android:id="@+id/tEmailEDEsp"
                         android:layout_width="match_parent"
                         android:inputType="textEmailAddress"
                         android:layout_height="40dp"
@@ -265,7 +281,7 @@
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETEdadNP"
+                        android:id="@+id/tPasswordEDEsp"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:background="@drawable/button_rounded3"
@@ -283,7 +299,7 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/btnGuardar"
+                    android:id="@+id/btnGuardarEDEsp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
@@ -293,7 +309,7 @@
                     android:background="@drawable/button_rounded2"/>
 
                 <Button
-                    android:id="@+id/btnCancelar"
+                    android:id="@+id/btnCancelarEDEsp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"

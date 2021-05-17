@@ -8,21 +8,21 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class EDprofile extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener{
+public class EDprofileEsp extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener{
 
-    private Spinner spnGeneroC;
+    private Spinner spnGeneroEsp;
     String sx;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_e_dprofile);
+        setContentView(R.layout.activity_e_dprofile_esp);
 
         ArrayAdapter<CharSequence> TipoGenero;
         TipoGenero = ArrayAdapter.createFromResource(this,R.array.sx, android.R.layout.simple_spinner_item);
-        spnGeneroC=findViewById(R.id.spnGeneroC);
-        spnGeneroC.setAdapter(TipoGenero);
-        spnGeneroC.setOnItemSelectedListener(this);
+        spnGeneroEsp=findViewById(R.id.spnGeneroEDEsp);
+        spnGeneroEsp.setAdapter(TipoGenero);
+        spnGeneroEsp.setOnItemSelectedListener(this);
     }
 
     @Override
@@ -33,7 +33,7 @@ public class EDprofile extends AppCompatActivity implements View.OnClickListener
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (parent.getId()) {
-            case R.id.spnGeneroC:
+            case R.id.spnGeneroEDEsp:
                 if (position != 0) {
                     sx = parent.getItemAtPosition(position).toString();
                 } else {

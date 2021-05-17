@@ -9,7 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".main_opcionDepo"></activity>
+        <activity android:name=".ListDepo"></activity>
+        <activity android:name=".DeleteDepo" />
+        <activity android:name=".UpdateDepo" />
+        <activity android:name=".AddDepo" />
+        <activity android:name=".Registros" />
+        <activity android:name=".TEjercicios" />
+        <activity android:name=".EDprofileEsp" />
+        <activity android:name=".main_opcionDepo" />
         <activity android:name=".main_opcionPsico" />
         <activity android:name=".main_opcionNutri" />
         <activity android:name=".checkinEspecialistas" />

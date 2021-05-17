@@ -18,6 +18,12 @@
     <string name="nameP">Nombre</string>
     <string name="nameApellifoF">Primer apellido</string>
     <string name="nameApellifoS">Segundo apellido</string>
+    <string name="DateN">Fecha de nacimiento</string>
+    <string name="calle">Calle</string>
+    <string name="colonia">Colonia</string>
+    <string name="numberC">Numero</string>
+    <string name="municipio">Municipio</string>
+    <string name="entidad">Entidad</string>
     <string name="registraCon">Registrarse con:</string>
     <string name="iniciarCon">Iniciar con:</string>
     <string name="StipoU">Tipo de usuario:</string>
@@ -33,11 +39,22 @@
     <string name="Edad">Edad</string>
     <string name="Estatura">Estatura</string>
     <string name="Peso">Peso</string>
+    <string name="Titulo">Profesión o titulo</string>
+    <string name="DateI">Fecha de inicio</string>
+    <string name="InfoP">Información personal</string>
+    <string name="Close">Cerrar Sesión</string>
 
+    <string name="tejercicio">Tipos de Ejercicios</string>
     <string name="ejercicio">Ejercicios</string>
-    <string name="fuerza">Ejercicios de Pesas</string>
+    <string name="conta">00:00:000</string>
+    <string name="conta2">00:00</string>
+    <string name="fuerza">Ejercicios de Fuerza</string>
     <string name="cardio">Ejercicios de Cardio</string>
     <string name="flexion">Ejercicios de Flexibilidad</string>
+    <string name="fuerza2">Fuerza</string>
+    <string name="cardio2">Cardio</string>
+    <string name="flexion2">Flexibilidad</string>
+    <string name="info">Acerca de</string>
     <string name="infoGene">Información general</string>
 
     <string name="perfil">Perfil</string>
@@ -66,18 +83,29 @@
     <string name="infoG4">Ejercicios de flexibilidad.</string>
     <string name="infoG5">Ejercicios de fuerza y resistencia.</string>
 
-    <string name="ClasiPesas">Clasificación para ejercicios de peso</string>
+    <string name="ClasiPesas">Grupos musculares</string>
     <string name="Pectoral">Pectoral</string>
     <string name="Dorsal">Dorsal</string>
     <string name="Cuádriceps">Cuádriceps</string>
     <string name="Bíceps">Bíceps</string>
     <string name="Tríceps">Tríceps</string>
     <string name="Hombros">Hombros</string>
-    <string name="Isquiosofemorales">Isquios o femorales</string>
+    <string name="Isquiosofemorales">Femorales</string>
     <string name="Glúteos">Glúteos</string>
     <string name="Abdominales">Abdominales</string>
     <string name="Antebrazos">Antebrazo</string>
     <string name="Cuello">Cuello</string>
     <string name="Gemelos">Gemelos</string>
+
+    <string name="cronometro">Cronómetro</string>
+    <string name="temporizador">Temporizador</string>
+    <string name="logros">Logros</string>
+    <string name="registro">Registros</string>
+    <string name="registro1">registro:</string>
+    <string name="Lregistro">Lista de registros</string>
+
+    <string name="nuevo">Nuevo</string>
+    <string name="eliminar">Eliminar</string>
+
 
 </resources>
