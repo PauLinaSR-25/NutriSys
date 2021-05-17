@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tu">
+        <item>Especialista</item>
+        <item>Cliente</item>
+    </string-array>
+
+    <string-array name="tE">
+        <item>Nutrición</item>
+        <item>Psicología</item>
+        <item>Deporte (entrenador)</item>
+    </string-array>
+
+    <string-array name="sx">
+        <item>Seleccione un genero</item>
+        <item>Masculino</item>
+        <item>Femenino</item>
+    </string-array>
+
+</resources>

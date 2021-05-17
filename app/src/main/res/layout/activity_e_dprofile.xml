@@ -36,11 +36,11 @@
 
                 <ImageView
                     android:id="@+id/iVFotoNP"
-                    android:layout_width="196dp"
-                    android:layout_height="171dp"
+                    android:layout_width="123dp"
+                    android:layout_height="92dp"
                     android:layout_gravity="center"
-                    app:srcCompat="@drawable/foto"
-                    android:contentDescription="@string/foto"/>
+                    android:contentDescription="@string/foto"
+                    app:srcCompat="@drawable/foto" />
 
             </LinearLayout>
 
@@ -54,13 +54,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="@string/nameP"
-                    android:background="@drawable/button_rounded3"
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/tIETNombre"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
                         android:inputType="textPersonName" />
 
                 </com.google.android.material.textfield.TextInputLayout>
@@ -68,62 +69,35 @@
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/email"
-                    android:background="@drawable/button_rounded3"
+                    android:hint="@string/nameApellifoF"
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETEmail"
+                        android:id="@+id/tIETPApellido"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textEmailAddress" />
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
+                        android:inputType="textPersonName" />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/celu"
-                    android:background="@drawable/button_rounded3"
+                    android:hint="@string/nameApellifoS"
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETCel"
+                        android:id="@+id/tIETSApellido"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="phone" />
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
+                        android:inputType="textPersonName" />
 
                 </com.google.android.material.textfield.TextInputLayout>
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:hint="@string/pass"
-                    android:background="@drawable/button_rounded3"
-                    android:layout_margin="7dp">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETEdadNP"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="textPassword" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal">
-
-                    <Spinner
-                        android:id="@+id/spnGeneroNP"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="7dp"
-                        android:background="@drawable/button_rounded3"/>
-
-                </LinearLayout>
-
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -134,20 +108,21 @@
                         android:layout_width="245dp"
                         android:layout_height="wrap_content"
                         android:hint="@string/fecha"
-                        android:background="@drawable/button_rounded3"
                         android:layout_margin="7dp">
 
                         <com.google.android.material.textfield.TextInputEditText
                             android:id="@+id/tIETFechaNP"
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
+                            android:layout_height="40dp"
+                            android:background="@drawable/button_rounded3"
+                            android:textSize="18sp"
                             android:inputType="date" />
 
                     </com.google.android.material.textfield.TextInputLayout>
 
                     <ImageButton
                         android:id="@+id/btnCalendarioNP"
-                        android:layout_width="5dp"
+                        android:layout_width="0dp"
                         android:layout_height="match_parent"
                         android:layout_margin="1dp"
                         android:layout_weight="1"
@@ -155,41 +130,150 @@
                         android:contentDescription="@string/perfil"
                         android:scaleType="fitCenter"
                         app:srcCompat="@drawable/icono_calendario"
-                        android:backgroundTint="#4CAF50"
+                        android:background="#4CAF50"
                         tools:ignore="VectorDrawableCompat" />
 
                 </LinearLayout>
 
+                <Spinner
+                    android:id="@+id/spnGeneroC"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_rounded3"/>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/Peso"
-                    android:background="@drawable/button_rounded3"
+                    android:hint="@string/celu"
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETPeso"
+                        android:id="@+id/tIETCel"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal" />
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
+                        android:inputType="phone" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/calle"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tIETCalle"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
+                        android:inputType="text" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/Estatura"
-                    android:background="@drawable/button_rounded3"
+                    android:hint="@string/numberC"
                     android:layout_margin="7dp">
 
                     <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/tIETEstatura"
+                        android:id="@+id/tIETNumeroC"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:inputType="numberDecimal" />
+                        android:inputType="numberDecimal"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/colonia"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tIETColonia"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/municipio"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tIETMunicipio"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/entidad"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tIETEntidad"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tIETEmail"
+                        android:layout_width="match_parent"
+                        android:inputType="textEmailAddress"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pass"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tIETEdadNP"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"
+                        android:inputType="textPassword" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
             </LinearLayout>
 
 

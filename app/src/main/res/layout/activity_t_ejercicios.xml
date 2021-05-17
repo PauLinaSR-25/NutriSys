@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TEjercicios"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/tejercicio"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_margin="50dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fuerza2"
+                android:textColor="@color/green2"
+                android:textSize="22sp"
+                android:layout_marginRight="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cardio2"
+                android:textColor="@color/green2"
+                android:textSize="22sp"
+                android:layout_marginLeft="90dp"/>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnfuerza"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/fuerza"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/fuerza"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btncardio"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/cardio"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cardio"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+            <androidx.slidingpanelayout.widget.SlidingPaneLayout
+                android:layout_width="0sp"
+                android:layout_height="100sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flexion2"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginRight="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="50dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnestira"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/flexion"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/estira"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btninfo"
+                    android:layout_width="170dp"
+                    android:layout_height="120dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/ver"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/info"
+                    android:layout_gravity="center"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

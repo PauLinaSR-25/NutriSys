@@ -5,70 +5,218 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".controler.ejercicio"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:layout_margin="15sp">
+
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="20dp">
+        android:layout_margin="25sp"
+        android:orientation="vertical">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/ejercicio"
+            android:text="@string/cronometro"
             android:textColor="@color/black"
-            android:textSize="30sp" />
+            android:textSize="30sp"/>
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center">
 
+        <Switch
+            android:id="@+id/OnTempo"
+            android:layout_width="155dp"
+            android:layout_height="15dp"
+            android:text="@string/temporizador"
+            android:textColor="@color/green3"
+            android:textSize="25dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+        <EditText
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/conta2"
+            android:textColor="@color/green"
+            android:gravity="center"
+            android:inputType="text"
+            android:autofillHints="">
+        </EditText>
+-->
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleHorizontal"
+                android:id="@+id/progress_bar"
+                android:layout_width="350dp"
+                android:layout_height="300dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="@drawable/circle_2"
+                android:indeterminate="false"
+                android:progressDrawable="@drawable/circle_1"
+                android:rotation="-90"
+                android:max="100"
+                tools:progress="0" />
+
+            <TextView
+                android:id="@+id/TVCrono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/conta"
+                android:gravity="center"
+                android:textColor="@color/green2"
+                android:textSize="30sp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnrepeat"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/google"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_repeat"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/btnplay"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/google"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_play"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@color/white"/>
+
+            <ImageButton
+                android:id="@+id/btnstop"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="2dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/google"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/ic_stop"
+                tools:ignore="VectorDrawableCompat"
+                android:background="@color/white"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logros"
+                android:textColor="@color/green2"
+                android:textSize="22sp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginStart="25dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registro"
+                android:textColor="@color/green2"
+                android:textSize="22sp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginStart="80dp" />
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+    <ImageButton
+        android:id="@+id/btnlogros"
+        android:layout_width="40dp"
+        android:layout_height="105dp"
+        android:layout_margin="2dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:background="@drawable/button_rounded"
+        android:contentDescription="@string/google"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/logro" />
 
         <ImageButton
-            android:id="@+id/btnfuerza"
-            android:layout_width="300dp"
-            android:layout_height="120dp"
-            android:layout_margin="25dp"
+            android:id="@+id/btnregistros"
+            android:layout_width="40dp"
+            android:layout_height="105dp"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
             android:adjustViewBounds="true"
-            android:background="@drawable/button_rounded2"
-            android:contentDescription="@string/fuerza"
+            android:background="@drawable/button_rounded"
+            android:contentDescription="@string/registra"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/fuerza"
-            android:layout_gravity="center"/>
+            app:srcCompat="@drawable/registro" />
 
-        <ImageButton
-            android:id="@+id/btncardio"
-            android:layout_width="300dp"
-            android:layout_height="120dp"
-            android:layout_margin="25dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/button_rounded2"
-            android:contentDescription="@string/cardio"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/cardio"
-            android:layout_gravity="center"/>
+    </LinearLayout>
 
-        <ImageButton
-            android:id="@+id/btnestira"
-            android:layout_width="300dp"
-            android:layout_height="120dp"
-            android:layout_margin="25dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/button_rounded2"
-            android:contentDescription="@string/flexion"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/estira"
-            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
 
-        <ImageButton
-            android:id="@+id/btninfo"
-            android:layout_width="300dp"
-            android:layout_height="120dp"
-            android:layout_margin="25dp"
-            android:adjustViewBounds="true"
-            android:background="@drawable/button_rounded2"
-            android:contentDescription="@string/ver"
-            android:scaleType="fitCenter"
-            app:srcCompat="@drawable/info"
-            android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ejercicio"
+                android:textColor="@color/green2"
+                android:textSize="22sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="5dp">
+
+            <ImageButton
+                android:id="@+id/btneLEjercicios"
+                android:layout_width="0dp"
+                android:layout_height="105dp"
+                android:layout_margin="2dp"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_rounded"
+                android:contentDescription="@string/google"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/listejer" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
