@@ -49,11 +49,16 @@
     <string name="conta">00:00:000</string>
     <string name="conta2">00:00</string>
     <string name="fuerza">Ejercicios de Fuerza</string>
+    <string name="nuevoF">Nuevo ejercicios de fuerza</string>
+    <string name="nuevoCF">Nuevo ejercicios de cardio o flexibilidad</string>
+    <string name="editF">Editar ejercicios de fuerza</string>
+    <string name="editCF">Editar ejercicios de cardio o flexibilidad</string>
     <string name="cardio">Ejercicios de Cardio</string>
     <string name="flexion">Ejercicios de Flexibilidad</string>
     <string name="fuerza2">Fuerza</string>
     <string name="cardio2">Cardio</string>
     <string name="flexion2">Flexibilidad</string>
+    <string name="cardioestirar">Cardio y Flexibilidad</string>
     <string name="info">Acerca de</string>
     <string name="infoGene">Información general</string>
 
@@ -107,5 +112,7 @@
     <string name="nuevo">Nuevo</string>
     <string name="eliminar">Eliminar</string>
 
+
+    <string name="descri">Descripción</string>
 
 </resources>

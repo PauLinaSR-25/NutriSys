@@ -73,10 +73,13 @@ public class ejercicioDepo extends Fragment implements View.OnClickListener{
     private void Botones (View root) {
         btnNew = root.findViewById(R.id.btnadd);
         btnNew.setOnClickListener(this);
+
         btnEdit = root.findViewById(R.id.btneditar);
         btnEdit.setOnClickListener(this);
+
         btnDel = root.findViewById(R.id.btneliminar);
         btnDel.setOnClickListener(this);
+
         btnList = root.findViewById(R.id.btnregistros);
         btnList.setOnClickListener(this);
     }//Botones
@@ -85,26 +88,25 @@ public class ejercicioDepo extends Fragment implements View.OnClickListener{
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.btnadd: {
+            case R.id.btnadd:
                 Intent intent = new Intent(ejercicioDepo.this.getContext(), AddDepo.class);
                 startActivity(intent);
-            }
             break;
-            case R.id.btneditar: {
-                Intent intent = new Intent(ejercicioDepo.this.getContext(), UpdateDepo.class);
-                startActivity(intent);
-            }
+            /*
+            case R.id.btneditar:
+                Intent intent1 = new Intent(ejercicioDepo.this.getContext(), UpdateDepo.class);
+                startActivity(intent1);
+
             break;
-            case R.id.btneliminar: {
-                Intent intent = new Intent(ejercicioDepo.this.getContext(), DeleteDepo.class);
-                startActivity(intent);
-            }
+            case R.id.btneliminar:
+                Intent intent2 = new Intent(ejercicioDepo.this.getContext(), DeleteDepo.class);
+                startActivity(intent2);
             break;
-            case R.id.btnregistros: {
-                Intent intent = new Intent(ejercicioDepo.this.getContext(), ListDepo.class);
-                startActivity(intent);
-            }
+            case R.id.btnregistros:
+                Intent intent3 = new Intent(ejercicioDepo.this.getContext(), ListDepo.class);
+                startActivity(intent3);
             break;
+            */
         }//switch
     }//onClick
 }//class

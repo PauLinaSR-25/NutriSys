@@ -18,4 +18,24 @@
         <item>Femenino</item>
     </string-array>
 
+    <string-array name="tEjer">
+        <item>Cardio</item>
+        <item>Flexibilidad</item>
+    </string-array>
+
+    <string-array name="tEpesas">
+        <item>Pectoral</item>
+        <item>Dorsal</item>
+        <item>Cuádriceps</item>
+        <item>Bíceps</item>
+        <item>Tríceps</item>
+        <item>Hombros</item>
+        <item>Femorales</item>
+        <item>Glúteos</item>
+        <item>Abdominales</item>
+        <item>Antebrazo</item>
+        <item>Cuello</item>
+        <item>Gemelos</item>
+    </string-array>
+
 </resources>
