@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ListEpesas"
+    android:background="@color/white"
+    android:layout_margin="2dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="2dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ClasiPesas"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_margin="15dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Pectoral"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Dorsal"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="90dp"/>
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/btnpecho"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_margin="7dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_rounded"
+                android:contentDescription="@string/Pectoral"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/pecho"
+                android:layout_gravity="center"/>
+
+            <ImageButton
+                android:id="@+id/btndorsal"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:layout_margin="7dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/button_rounded"
+                android:contentDescription="@string/Dorsal"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/espalda"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Cuádriceps"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginRight="50dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Bíceps"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="25dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btncuadriceps"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Cuádriceps"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cuadriceps"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btnbiceps"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Bíceps"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/biceps"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Tríceps"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Hombros"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="90dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btntriceps"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Tríceps"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/triceps"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btnhombros"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Hombros"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/hombro"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Isquiosofemorales"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginRight="85dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Glúteos"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginRight="10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnfemoral"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Isquiosofemorales"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/femoral"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btngluteo"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Glúteos"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/gluteo"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Abdominales"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginRight="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Antebrazos"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnabdomen"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Abdominales"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/abc"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btnantebrazo"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Antebrazos"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/antebrazo"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Cuello"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginRight="10dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Gemelos"
+                    android:textColor="@color/green2"
+                    android:textSize="22sp"
+                    android:layout_marginLeft="90dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btncuello"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Cuello"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/cuello"
+                    android:layout_gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btngemelos"
+                    android:layout_width="170dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="7dp"
+                    android:adjustViewBounds="true"
+                    android:background="@drawable/button_rounded"
+                    android:contentDescription="@string/Gemelos"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/gemelos"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

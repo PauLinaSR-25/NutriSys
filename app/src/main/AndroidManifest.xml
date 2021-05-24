@@ -9,7 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.NoActionBar">
-        <activity android:name=".UpdateDepo3"></activity>
+        <activity
+            android:name=".logrosdepoC"
+            android:exported="true" />
+        <activity
+            android:name=".NRegistros"
+            android:exported="true" />
+        <activity android:name=".UpdateDepo3" />
         <activity android:name=".UpdateDepo2" />
         <activity android:name=".AddDepo3" />
         <activity android:name=".AddDepo2" />

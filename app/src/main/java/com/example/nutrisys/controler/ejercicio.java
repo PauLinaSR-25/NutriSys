@@ -9,62 +9,37 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.example.nutrisys.Cardio;
-import com.example.nutrisys.EDprofile;
-import com.example.nutrisys.Estiramiento;
-import com.example.nutrisys.InfoGeneral;
-import com.example.nutrisys.Pesas;
+import com.example.nutrisys.NRegistros;
 import com.example.nutrisys.R;
 import com.example.nutrisys.Registros;
 import com.example.nutrisys.TEjercicios;
-import com.example.nutrisys.checkin;
-import com.example.nutrisys.checkinEspecialistas;
-import com.example.nutrisys.main_opcion;
+import com.example.nutrisys.logrosdepoC;
 
 public class ejercicio extends Fragment implements View.OnClickListener{
-    //variables
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-    private String mParam1;
-    private String mParam2;
 
-    private ImageButton btnLEjercicios, btnLRegistros,btnstart, btnstop, btnreset;
+    //atributos
+    private ImageButton btnLEjercicios, btnLRegistros,btnLogros,btnstart, btnstop, btnreset;
     boolean isOn=false;
     TextView crono;
     Thread cronos;
     int mili=0, seg=0, minutos=0;
     ProgressBar Progress;
-
-
     Handler h=new Handler();
 
+
+    //Metodos
     public ejercicio() {
         // Required empty public constructor
-    }
-
-    // TODO: Rename and change types and number of parameters
-    public static ejercicio newInstance(String param1, String param2) {
-        ejercicio fragment = new ejercicio();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
-    }
+    }//M.onCreate
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -96,6 +71,8 @@ public class ejercicio extends Fragment implements View.OnClickListener{
         btnLEjercicios.setOnClickListener(this);
         btnLRegistros = root.findViewById(R.id.btnregistros);
         btnLRegistros.setOnClickListener(this);
+        btnLogros = root.findViewById(R.id.btnlogros);
+        btnLogros.setOnClickListener(this);
 
         cronos = new Thread(new Runnable() {
             @Override
@@ -154,8 +131,11 @@ public class ejercicio extends Fragment implements View.OnClickListener{
             case R.id.btnplay:
                 isOn=true;
                 break;
-            case R.id.btnstop:
-                isOn=false;
+            case R.id.btnstop: {
+                isOn = false;
+                Intent intent = new Intent(ejercicio.this.getContext(), NRegistros.class);
+                startActivity(intent);
+            }
                 break;
             case R.id.btnrepeat:
                 isOn=false;
@@ -175,6 +155,11 @@ public class ejercicio extends Fragment implements View.OnClickListener{
                 startActivity(intent);
             }
                 break;
+            case R.id.btnlogros: {
+                Intent intent = new Intent(ejercicio.this.getContext(), logrosdepoC.class);
+                startActivity(intent);
+            }
+            break;
         }//switch
-    }
+    }//M.onClick
 }//class

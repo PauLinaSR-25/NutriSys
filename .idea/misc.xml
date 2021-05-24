@@ -4,6 +4,30 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_add_depo.xml" value="0.16441441441441443" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_add_depo2.xml" value="0.21" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_add_depo3.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_cardio.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_checkin.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_checkin_especialistas.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_delete_depo.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_e_dprofile.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_e_dprofile_esp.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_estiramiento.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_info_general.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_list_depo.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_list_epesas.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_logrosdepo_c.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_main.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_main_opcion.xml" value="0.1" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_nregistros.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_pesas.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_registros.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_t_ejercicios.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_update_depo.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_update_depo2.xml" value="0.22" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/activity_update_depo3.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/fragment_ejercicio.xml" value="0.17657657657657658" />
+        <entry key="..\:/Users/pau_l/AndroidStudioProjects/NutriSys/app/src/main/res/layout/fragment_home_depo.xml" value="0.17657657657657658" />
       </map>
     </option>
   </component>

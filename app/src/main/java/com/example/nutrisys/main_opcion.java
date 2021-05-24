@@ -10,11 +10,15 @@ import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 
 public class main_opcion extends AppCompatActivity {
+
+    //Atributos
     TabLayout tabLayout;
     ViewPager viewPager;
     TabItem tab1,tab2,tab3,tab4;
     PagerController pagerAdapter;
 
+
+    //Metodos
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

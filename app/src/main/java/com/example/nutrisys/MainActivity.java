@@ -12,31 +12,42 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener,AdapterView.OnItemSelectedListener{
 
+    //Atributos
     private Spinner spnTusuario;
     String tU;
     Button btnlogin, btnregistrar;
 
 
+    //Metodos
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-        ArrayAdapter<CharSequence> TipoUAdapter;
-        TipoUAdapter = ArrayAdapter.createFromResource(this,R.array.tu, android.R.layout.simple_spinner_item);
-        spnTusuario=findViewById(R.id.spnTUsuario);
-        spnTusuario.setAdapter(TipoUAdapter);
-        spnTusuario.setOnItemSelectedListener(this);
+        componentes();
+    }//M. onCreate
 
+    private void componentes (){
+        botones();
+        spinnerComponentes();
+    }//M.Componentes
+
+    private void botones (){
         btnlogin = findViewById(R.id.btnlogin);
         btnlogin.setOnClickListener((View.OnClickListener) this);
 
         btnregistrar=findViewById(R.id.btnregis);
         btnregistrar.setOnClickListener((View.OnClickListener) this);
+    }//M.Botones
 
-    }//M. onCreate
-
+    private void spinnerComponentes (){
+        ArrayAdapter<CharSequence> TipoUAdapter;
+        TipoUAdapter = ArrayAdapter.createFromResource(this,R.array.tu, android.R.layout.simple_spinner_item);
+        spnTusuario=findViewById(R.id.spnTUsuario);
+        spnTusuario.setAdapter(TipoUAdapter);
+        spnTusuario.setOnItemSelectedListener(this);
+    }//M.spinnerComponentes
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -49,12 +60,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
                 break;
         }//Switch
-    }//M.
+    }//M.onItemSelected
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
-    }//M.
+    }//M.onNothingSelected
 
     @Override
     public void onClick(View v) {
@@ -79,8 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(intent);
                 }//registro de especialista
                 break;
-        }
-
+        }//switch
     }//M.onClick
 
     public static int obtenerPosicionItem(Spinner spinner, String fruta) {
@@ -97,5 +107,5 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //Devuelve un valor entero (si encontro una coincidencia devuelve la
         // posición 0 o N, de lo contrario devuelve 0 = posición inicial)
         return posicion;
-    }
+    }//M.obtenerPosicionItem
 }//class

@@ -111,8 +111,13 @@
 
     <string name="nuevo">Nuevo</string>
     <string name="eliminar">Eliminar</string>
+    <string name="eliminarE">Eliminar ejercicio</string>
 
 
     <string name="descri">Descripción</string>
+    <string name="infoEj">Información:</string>
+
+    <string name="nuevoR">Nuevo Registro</string>
+    <string name="time">Tiempo</string>
 
 </resources>

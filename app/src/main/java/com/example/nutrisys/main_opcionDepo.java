@@ -12,11 +12,15 @@ import com.google.android.material.tabs.TabLayout;
 
 public class main_opcionDepo extends AppCompatActivity {
 
+
+    //Atributos
     TabLayout tabLayout;
     ViewPager viewPager;
     TabItem tab1,tab2;
     PagerControllerDepo pagerAdapter;
 
+
+    //Metodos
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,4 +57,4 @@ public class main_opcionDepo extends AppCompatActivity {
         });
         viewPager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tabLayout));
     }//M.onCreate
-}
+}//class

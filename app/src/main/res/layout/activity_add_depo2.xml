@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDepo2"
+    android:background="@color/white"
+    android:layout_margin="5dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="20dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nuevoCF"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+
+                <ImageView
+                    android:id="@+id/iVFotoNCF"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/foto"
+                    app:srcCompat="@drawable/foto"
+                    tools:ignore="ImageContrastCheck" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="1dp">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nameP"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tNombreNCF"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:background="@drawable/button_rounded3"
+                        android:inputType="textPersonName"
+                        android:textSize="18sp"
+                        tools:ignore="TextContrastCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <Spinner
+                    android:id="@+id/spnTEjercicioNCF"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded3"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:hint="@string/descri"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tDescripcionNCF"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:background="@drawable/button_rounded3"
+                        android:inputType="text"
+                        android:textSize="18sp"
+                        tools:ignore="TextContrastCheck" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnGuardarNCF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded2"
+                    android:text="@string/guardar"
+                    android:textSize="18sp"
+                    tools:ignore="TextContrastCheck" />
+
+                <Button
+                    android:id="@+id/btnCancelarNCF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_rounded2"
+                    android:text="@string/cancelar"
+                    android:textSize="18sp"
+                    tools:ignore="TextContrastCheck" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

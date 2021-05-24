@@ -12,11 +12,15 @@ import com.google.android.material.tabs.TabLayout;
 
 public class main_opcionNutri extends AppCompatActivity {
 
+
+    //Atributos
     TabLayout tabLayout;
     ViewPager viewPager;
     TabItem tab1,tab2;
     PagerControllerNutri pagerAdapter;
 
+
+    //Metodos
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

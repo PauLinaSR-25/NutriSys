@@ -10,44 +10,23 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-import com.example.nutrisys.EDprofile;
 import com.example.nutrisys.EDprofileEsp;
 import com.example.nutrisys.R;
 
-public class homeNutri extends Fragment {
+public class homeNutri extends Fragment  implements View.OnClickListener{
 
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
+    //Atributos
     private Button btnModifica;
 
     public homeNutri() {
         // Required empty public constructor
     }
 
-    // TODO: Rename and change types and number of parameters
-    public static homeNutri newInstance(String param1, String param2) {
-        homeNutri fragment = new homeNutri();
-        Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
-        fragment.setArguments(args);
-        return fragment;
-    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
-        }
+
     }
 
     @Override
@@ -57,22 +36,25 @@ public class homeNutri extends Fragment {
         View root= inflater.inflate(R.layout.fragment_home_nutri, container, false);
         Componentes(root);
         return root;
-    }
+    }//M.onCreateView
 
     private void Componentes (View root){
         Botones(root);
-    }
+    }//M.componentes
 
     private void Botones (View root){
+        btnModifica=root.findViewById(R.id.btnEditarPNutri);
+        btnModifica.setOnClickListener((View.OnClickListener) this);
+    }//Botones
 
-        btnModifica = root.findViewById(R.id.btnEditarPNutri);
-        btnModifica.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(homeNutri.this.getContext(), EDprofileEsp.class);
+    @Override
+    public void onClick(View v) {
+        Intent intent;
+        switch (v.getId()){
+            case R.id.btnEditarPNutri:
+                intent = new Intent(homeNutri.this.getContext(), EDprofileEsp.class);
                 startActivity(intent);
-            }
-        });
-    }
-
+                break;
+        }//Switch
+    }//M.onClick
 }//Class

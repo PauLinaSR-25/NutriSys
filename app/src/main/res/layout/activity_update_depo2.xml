@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateDepo2"
+    android:background="@color/white"
+    android:layout_margin="5dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/editCF"
+                    android:textColor="@color/black"
+                    android:textSize="30sp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="1dp">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/nameP"
+                        android:layout_margin="7dp"
+                        android:layout_weight="1">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/tNombreEDCF"
+                            android:layout_width="match_parent"
+                            android:layout_height="48dp"
+                            android:background="@drawable/button_rounded3"
+                            android:textSize="18sp"
+                            android:inputType="text" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <ImageButton
+                        android:id="@+id/btnfindEDCF"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/google"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_find"
+                        tools:ignore="VectorDrawableCompat"
+                        android:background="@color/white"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+
+
+
+                <ImageView
+                    android:id="@+id/iVEDCF"
+                    android:layout_width="160dp"
+                    android:layout_height="160dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/foto"
+                    app:srcCompat="@drawable/foto" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_margin="1dp">
+
+
+                <Spinner
+                    android:id="@+id/spnUTEjercicioCF"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/button_rounded3"/>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:hint="@string/descri"
+                    android:layout_margin="7dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/tDescripcionEDCF"
+                        android:layout_width="match_parent"
+                        android:inputType="text"
+                        android:layout_height="180dp"
+                        android:background="@drawable/button_rounded3"
+                        android:textSize="18sp"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnGuardarEDCF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/guardar"
+                    android:textSize="18sp"
+                    android:background="@drawable/button_rounded2"/>
+
+                <Button
+                    android:id="@+id/btnCancelarEDCF"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/cancelar"
+                    android:textSize="18sp"
+                    android:background="@drawable/button_rounded2"/>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,33 +8,47 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 
 public class checkinEspecialistas extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemSelectedListener{
 
-    Button btnregistrar;
+    //Atributos
+    Button btnregistrarnewE;
     private Spinner spnTespecialidad;
     String tE;
 
+    //Metodos
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_checkin_especialistas);
 
+        componentes();
+    }//M.onCreate
+
+    private void componentes (){
+        botones();
+        spinnerComponentes();
+    }//M.Componentes
+
+    private void spinnerComponentes (){
         ArrayAdapter<CharSequence> TipoEAdapter;
         TipoEAdapter = ArrayAdapter.createFromResource(this,R.array.tE, android.R.layout.simple_spinner_item);
-        spnTespecialidad=findViewById(R.id.spnTEspecialidad);
+        spnTespecialidad=findViewById(R.id.spnTEspecialidadNewE);
         spnTespecialidad.setAdapter(TipoEAdapter);
         spnTespecialidad.setOnItemSelectedListener(this);
+    }//M.spinnerComponentes
 
-        btnregistrar=findViewById(R.id.btnregis);
-        btnregistrar.setOnClickListener((View.OnClickListener) this);
-    }
+    private void botones (){
+        btnregistrarnewE=findViewById(R.id.btnregisNewE);
+        btnregistrarnewE.setOnClickListener((View.OnClickListener) this);
+    }//M.Botones
 
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.btnregis:
+            case R.id.btnregisNewE:
                 if(obtenerPosicionItem(spnTespecialidad,tE)==0) {
                     Intent intent = new Intent(v.getContext(), main_opcionNutri.class);
                     startActivity(intent);
@@ -48,26 +62,26 @@ public class checkinEspecialistas extends AppCompatActivity implements View.OnCl
                     startActivity(intent);
                 }//menu de deportista
                 break;
-        }
-    }
+        }//switch
+    }//M.onClick
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
         switch (parent.getId()) {
-            case R.id.spnTEspecialidad:
+            case R.id.spnTEspecialidadNewE:
                 if (position != 0) {
                     tE = parent.getItemAtPosition(position).toString();
                 } else {
                     tE = "";
                 }
                 break;
-        }
-    }
+        }//switch
+    }//M.onItemSelected
 
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
-    }
+    }//M.onNothingSelected
 
     public static int obtenerPosicionItem(Spinner spinner, String fruta) {
         //Creamos la variable posicion y lo inicializamos en 0
@@ -83,5 +97,5 @@ public class checkinEspecialistas extends AppCompatActivity implements View.OnCl
         //Devuelve un valor entero (si encontro una coincidencia devuelve la
         // posición 0 o N, de lo contrario devuelve 0 = posición inicial)
         return posicion;
-    }
-}
+    }//M.obtenerPosicionItem
+}//class
